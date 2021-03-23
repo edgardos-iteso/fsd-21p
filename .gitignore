@@ -6,3 +6,5 @@
 *.xpr
 *.jou
 *.log
+*/sim/*
+!*/sim/*.v
