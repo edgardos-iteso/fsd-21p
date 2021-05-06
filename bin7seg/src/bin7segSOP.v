@@ -1,26 +1,5 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company:
-// Engineer:
-//
-// Create Date: 02/10/2021 07:58:09 PM
-// Design Name:
-// Module Name: bin7seg
-// Project Name:
-// Target Devices:
-// Tool Versions:
-// Description:
-//
-// Dependencies:
-//
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-//
-//////////////////////////////////////////////////////////////////////////////////
 
-
-module bcd7segSOP(
+module bin7segSOP(
   input A,
   input B,
   input C,

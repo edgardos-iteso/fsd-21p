@@ -1,47 +1,32 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company:
-// Engineer:
-//
-// Create Date: 02/10/2021 08:19:29 PM
-// Design Name:
-// Module Name: bin7segTB
-// Project Name:
-// Target Devices:
-// Tool Versions:
-// Description:
-//
-// Dependencies:
-//
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-//
-//////////////////////////////////////////////////////////////////////////////////
 
-
-module bcd7segTB( );
+module bin7segTB( );
   reg [3:0] counter;
 
   wire aSOP;
-  wire bSOP;
-  wire cSOP;
-  wire dSOP;
-  wire eSOP;
-  wire fSOP;
-  wire gSOP;
-
   wire aLUT;
+
+  wire bSOP;
   wire bLUT;
+
+  wire cSOP;
   wire cLUT;
+
+  wire dSOP;
   wire dLUT;
+
+  wire eSOP;
   wire eLUT;
+
+  wire fSOP;
   wire fLUT;
+
+  wire gSOP;
   wire gLUT;
 
   integer iterador;
 
-  bcd7segSOP DUV1 (
+  bin7segSOP DUV1 (
     .A (counter[0]),
     .B (counter[1]),
     .C (counter[2]),
@@ -56,7 +41,7 @@ module bcd7segTB( );
     .g (gSOP)
   );
 
-  bcd7segLUT DUV2 (
+  bin7segLUT DUV2 (
     .A (counter[0]),
     .B (counter[1]),
     .C (counter[2]),
